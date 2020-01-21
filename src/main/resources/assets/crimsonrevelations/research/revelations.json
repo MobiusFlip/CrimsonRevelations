@@ -1,0 +1,167 @@
+{
+	"entries": [
+		{
+			"key": "CRIMSON_REVELATIONS",
+			"name": "crimsonrevelations.research.CRIMSON_REVELATIONS.title",
+			"icons": ["thaumcraft:curio;1;6"],
+			"category": "CR",
+			"parents": ["CrimsonRites"],
+			"siblings": [],
+			"meta": ["ROUND"],
+			"location": [0, 0],
+			"reward_item": [],
+			"reward_knowledge": [],
+			"stages": [
+				{
+					"text": "crimsonrevelations.research.CRIMSON_REVELATIONS.text.stage.1",
+					"recipes":["crimsonrevelations:crimsonbanner"]
+				}
+			],
+			"addenda": []
+		},
+		{
+			"key": "ANCIENT_STONE",
+			"name": "crimsonrevelations.research.ANCIENT_STONE.title",
+			"icons": ["thaumcraft:stone_ancient"],
+			"category": "CR",
+			"parents": ["CRIMSON_REVELATIONS"],
+			"siblings": [],
+			"meta": [],
+			"location": [0, 3],
+			"reward_item": [],
+			"reward_knowledge": [],
+			"stages": [
+				{
+					"text": "crimsonrevelations.research.ANCIENT_STONE.text.stage.1",
+					"required_knowledge": ["THEORY;ALCHEMY;1","OBSERVATION;ELDRITCH;2"]
+				},
+				{
+					"text": "crimsonrevelations.research.ANCIENT_STONE.text.stage.2",
+					"recipes": [
+						"crimsonrevelations:ancientstone",
+						"crimsonrevelations:ancientstonetile",
+						"crimsonrevelations:glyphstone"
+					]
+				}
+			],
+			"addenda": []
+		},
+		{
+			"key": "CRIMSON_ARMOR",
+			"name": "crimsonrevelations.research.CRIMSON_ARMOR.title",
+			"icons": ["thaumcraft:crimson_robe_helm"],
+			"category": "CR",
+			"parents": ["CRIMSON_REVELATIONS","BASEARTIFICE","METALLURGY"],
+			"siblings": [],
+			"meta": [],
+			"location": [0, -3],
+			"reward_item": [],
+			"reward_knowledge": [],
+			"stages": [
+				{
+					"text": "crimsonrevelations.research.CRIMSON_ARMOR.text.stage.1",
+					"required_knowledge": ["THEORY;ARTIFICE;1"],
+					"required_item": ["minecraft:iron_ingot","thaumcraft:fabric"],
+					"required_craft": ["thaumcraft:banner_crimson_cult"]
+				},
+				{
+					"text": "crimsonrevelations.research.CRIMSON_ARMOR.text.stage.2",
+					"recipes": [
+						"crimsonrevelations:crimson_helm",
+						"crimsonrevelations:crimson_chestplate",
+						"crimsonrevelations:crimson_greaves",
+						"crimsonrevelations:crimson_boots",
+						"crimsonrevelations:crimson_hood",
+						"crimsonrevelations:crimson_robes",
+						"crimsonrevelations:crimson_leggings"
+					]
+				}
+			],
+			"addenda": []
+		},
+		{
+			"key": "CRIMSON_BLADE",
+			"name": "crimsonrevelations.research.CRIMSON_BLADE.title",
+			"icons": ["thaumcraft:crimson_blade"],
+			"category": "CR",
+			"parents": ["CRIMSON_REVELATIONS", "BASEELDRITCH"],
+			"siblings": [],
+			"meta": [],
+			"location": [3, 0],
+			"reward_item": [],
+			"reward_knowledge": [],
+			"stages": [
+				{
+					"text": "crimsonrevelations.research.CRIMSON_BLADE.text.stage.1",
+					"required_knowledge": ["THEORY;INFUSION;1","THEORY;ELDRITCH;1"],
+					"required_research": ["!mortuus","!aversio"]
+					"required_craft": ["thaumcraft:void_sword"]
+				},
+				{
+					"text": "crimsonrevelations.research.CRIMSON_BLADE.text.stage.2",
+					"recipes": [
+						"crimsonrevelations:crimsonblade"
+					]
+					"warp": 1
+				}
+			],
+			"addenda": []
+		},
+		{
+			"key": "PRAETOR_ARMOR",
+			"name": "crimsonrevelations.research.PRAETOR_ARMOR.title",
+			"icons": ["thaumcraft:crimson_praetor_helm"],
+			"category": "CR",
+			"parents": ["CRIMSON_ARMOR","ARMORFORTRESS"],
+			"siblings": [],
+			"meta": ["SPIKY"],
+			"location": [1, -2],
+			"reward_item": [],
+			"reward_knowledge": [],
+			"stages": [
+				{
+					"text": "crimsonrevelations.research.PRAETOR_ARMOR.text.stage.1",
+					"required_knowledge": ["THEORY;INFUSION;1","OBSERVATION;INFUSION;1"],
+					"required_craft": ["thaumcraft:crimson_plate_helm", "thaumcraft:crimson_plate_chest", "thaumcraft:crimson_plate_legs"]
+				},
+				{
+					"text": "crimsonrevelations.research.PRAETOR_ARMOR.text.stage.2",
+					"recipes": [
+						"crimsonrevelations:praetor_helm",
+						"crimsonrevelations:praetor_chestplate",
+						"crimsonrevelations:praetor_greaves"
+					]
+				}
+			],
+			"addenda": []
+		},
+		{
+			"key": "ELDRITCH_CRAB",
+			"name": "crimsonrevelations.research.ELDRITCH_CRAB.title",
+			"icons": ["thaumcraft:textures/research/r_crab.png"],
+			"category": "CR",
+			"parents": ["ANCIENT_STONE","CRIMSON_ARMOR"],
+			"siblings": [],
+			"meta": ["SPIKY"],
+			"location": [-3, 0],
+			"reward_item": [],
+			"reward_knowledge": [],
+			"stages": [
+				{
+					"text": "crimsonrevelations.research.ELDRITCH_CRAB.text.stage.1",
+					"required_knowledge": ["THEORY;ELDRITCH;2"],
+					"required_research": ["!exanimis"],
+					"required_craft": ["thaumcraft:crimson_plate_helm", "thaumcraft:stone_ancient_glyphed"]
+				},
+				{
+					"text": "crimsonrevelations.research.ELDRITCH_CRAB.text.stage.2",
+					"recipes": [
+						"crimsonrevelations:eldritchcrab"
+					]
+					"warp": 2
+				}
+			],
+			"addenda": []
+		}
+	]
+}
