@@ -25,7 +25,7 @@ public class CrimsonRecipes {
 
 	private static void initInfusion() {
 		ThaumcraftApi.addInfusionCraftingRecipe(new ResourceLocation("crimsonrevelations", "crimsonblade"),
-				new InfusionRecipe("CRIMSON_BLADE", new ItemStack(ItemsTC.crimsonBlade), 3,
+				new InfusionRecipe("CRIMSON_BLADE", new ItemStack(ItemsTC.crimsonBlade), 7,
 					new AspectList().add(Aspect.AVERSION, 75).add(Aspect.DEATH, 75).add(Aspect.TRAP, 25).add(Aspect.DESIRE, 25),
 					new ItemStack(ItemsTC.voidSword), new Object[] {
 							ThaumcraftApiHelper.makeCrystal(Aspect.AVERSION), ThaumcraftApiHelper.makeCrystal(Aspect.DEATH), new ItemStack(ItemsTC.plate, 1, 3), BlocksTC.bannerCrimsonCult
@@ -55,10 +55,10 @@ public class CrimsonRecipes {
 		ItemStack crabStack = new ItemStack(Items.SPAWN_EGG);
 		ItemMonsterPlacer.applyEntityIdToItemStack(crabStack, new ResourceLocation("thaumcraft", "eldritchcrab"));
 		ThaumcraftApi.addInfusionCraftingRecipe(new ResourceLocation("crimsonrevelations", "eldritchcrab"),
-				new InfusionRecipe("PRAETOR_ARMOR", crabStack, 5,
+				new InfusionRecipe("PRAETOR_ARMOR", crabStack, 9,
 						new AspectList().add(Aspect.UNDEAD, 50).add(Aspect.ELDRITCH, 75).add(Aspect.PROTECT, 50),
-						new ItemStack(Items.EGG), new Object[] {
-								new ItemStack(Items.ENDER_EYE), new ItemStack(Items.FERMENTED_SPIDER_EYE), new ItemStack(ItemsTC.plate, 1, 3), new ItemStack(BlocksTC.stoneAncient), ItemsTC.crimsonPlateHelm, new ItemStack(BlocksTC.stoneAncient), new ItemStack(ItemsTC.plate, 1, 3), new ItemStack(Items.FERMENTED_SPIDER_EYE)
+						new ItemStack(ItemsTC.voidSeed), new Object[] {
+								new ItemStack(Items.ENDER_EYE), new ItemStack(BlocksTC.stoneAncientGlyphed), new ItemStack(ItemsTC.plate, 1, 1), new ItemStack(ItemsTC.plate, 1, 1), new ItemStack(ItemsTC.plate, 1, 0), new ItemStack(ItemsTC.plate, 1, 1), new ItemStack(ItemsTC.plate, 1, 1), new ItemStack(BlocksTC.stoneAncientGlyphed)
 						}
 				));
 	}
@@ -76,10 +76,10 @@ public class CrimsonRecipes {
                 defaultGroup, "CRIMSON_REVELATIONS", 10, 
                 new AspectList(), 
                 new ItemStack(BlocksTC.bannerCrimsonCult), new Object[] {
-                        "DND",
-                        "NBN",
-                        "D D",
-                        'D', new ItemStack(Items.DYE, 1, 1), 'N', Items.GOLD_NUGGET, 'B', new ItemStack(Blocks.WOOL, 1, 1)
+                        "WS ",
+                        "IS ",
+                        "WD ",
+                        'S', Items.STICK, 'D', new ItemStack(Blocks.WOODEN_SLAB), 'W', new ItemStack(Blocks.WOOL, 1, 14), 'I', new ItemStack(BlocksTC.inlay)
                 }
         ));
 		ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation("crimsonrevelations", "ancientstonetile"), new ShapedArcaneRecipe(
@@ -119,7 +119,7 @@ public class CrimsonRecipes {
                         "I I",
                         "WBW",
                         "III",
-                        'I', new ItemStack(ItemsTC.plate, 1, 1), 'B', new ItemStack(BlocksTC.bannerCrimsonCult), 'W', new ItemStack(Blocks.WOOL, 1, 1)
+                        'I', new ItemStack(ItemsTC.plate, 1, 1), 'B', new ItemStack(BlocksTC.bannerCrimsonCult), 'W', new ItemStack(Blocks.WOOL, 1, 14)
                 }
         ));
 		ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation("crimsonrevelations", "crimson_greaves"), new ShapedArcaneRecipe(
@@ -129,7 +129,7 @@ public class CrimsonRecipes {
                         "WBW",
                         "I I",
                         "I I",
-                        'I', new ItemStack(ItemsTC.plate, 1, 1), 'B', new ItemStack(BlocksTC.bannerCrimsonCult), 'W', new ItemStack(Blocks.WOOL, 1, 1)
+                        'I', new ItemStack(ItemsTC.plate, 1, 1), 'B', new ItemStack(BlocksTC.bannerCrimsonCult), 'W', new ItemStack(Blocks.WOOL, 1, 14)
                 }
         ));
 		ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation("crimsonrevelations", "crimson_hood"), new ShapedArcaneRecipe(
@@ -149,7 +149,7 @@ public class CrimsonRecipes {
                         "F F",
                         "IBI",
                         "FWF",
-                        'F', ItemsTC.fabric, 'B', new ItemStack(BlocksTC.bannerCrimsonCult), 'I', new ItemStack(ItemsTC.plate, 1, 1), 'W', new ItemStack(Blocks.WOOL, 1, 1)
+                        'F', ItemsTC.fabric, 'B', new ItemStack(BlocksTC.bannerCrimsonCult), 'I', new ItemStack(ItemsTC.plate, 1, 1), 'W', new ItemStack(Blocks.WOOL, 1, 14)
                 }
         ));
 		ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation("crimsonrevelations", "crimson_leggings"), new ShapedArcaneRecipe(
@@ -159,7 +159,7 @@ public class CrimsonRecipes {
                         "WBW",
                         "F F",
                         "F F",
-                        'F', ItemsTC.fabric, 'B', new ItemStack(BlocksTC.bannerCrimsonCult), 'W', new ItemStack(Blocks.WOOL, 1, 1)
+                        'F', ItemsTC.fabric, 'B', new ItemStack(BlocksTC.bannerCrimsonCult), 'W', new ItemStack(Blocks.WOOL, 1, 14)
                 }
         ));
 		ThaumcraftApi.addArcaneCraftingRecipe(new ResourceLocation("crimsonrevelations", "crimson_boots"), new ShapedArcaneRecipe(
@@ -169,7 +169,7 @@ public class CrimsonRecipes {
                         "   ",
                         "I I",
                         "W W",
-                        'I', new ItemStack(ItemsTC.plate, 1, 1), 'W', new ItemStack(Blocks.WOOL, 1, 1)
+                        'I', new ItemStack(ItemsTC.plate, 1, 1), 'W', new ItemStack(Blocks.WOOL, 1, 14)
                 }
         ));
 	}
