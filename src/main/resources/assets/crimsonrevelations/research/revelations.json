@@ -161,6 +161,115 @@
                 }
             ],
             "addenda": []
+        },
+        {
+            "key": "ERYTHURGY",
+            "name": "crimsonrevelations.research.ERYTHURGY.title",
+            "icons": ["thaumcraft:textures/research/r_eldritchminor.png"],
+            "category": "CR",
+            "parents": ["CRIMSON_REVELATIONS"],
+            "siblings": ["ENTROPIC_PROCESSING","ORDERED_DECONSTRUCTION"],
+            "meta": ["ROUND"],
+            "location": [1, 3],
+            "reward_item": [],
+            "reward_knowledge": [],
+            "stages": [
+                {
+                    "text": "crimsonrevelations.research.ERYTHURGY.text.stage.1",
+                    "required_knowledge": ["THEORY;ALCHEMY;1","OBSERVATION;BASICS;2"],
+                    "required_item": [
+                        "thaumcraft:phial;1;1;{Aspects:[{amount:10,key:'aer'}]}",
+                        "thaumcraft:phial;1;1;{Aspects:[{amount:10,key:'terra'}]}",
+                        "thaumcraft:phial;1;1;{Aspects:[{amount:10,key:'ignis'}]}",
+                        "thaumcraft:phial;1;1;{Aspects:[{amount:10,key:'aqua'}]}",
+                        "thaumcraft:phial;1;1;{Aspects:[{amount:10,key:'ordo'}]}",
+                        "thaumcraft:phial;1;1;{Aspects:[{amount:10,key:'perditio'}]}"
+                        ]
+                },
+                {
+                    "text": "crimsonrevelations.research.ERYTHURGY.text.stage.2"
+                }
+            ]
+        },
+        {
+            "key": "ENTROPIC_PROCESSING",
+            "name": "crimsonrevelations.research.ENTROPIC_PROCESSING.title",
+            "icons": ["crimsonrevelations:textures/research/perditio.png"],
+            "category": "CR",
+            "parents": ["ERYTHURGY"],
+            "siblings": [],
+            "meta": [],
+            "location": [0, 4],
+            "reward_item": [],
+            "reward_knowledge": [],
+            "stages": [
+                {
+                    "text": "crimsonrevelations.research.ENTROPIC_PROCESSING.text.stage.1",
+                    "recipes": [
+                        "crimsonrevelations:entropyblazepowder",
+                        "crimsonrevelations:entropybonemeal",
+                        "crimsonrevelations:entropysunflower",
+                        "crimsonrevelations:entropylilac",
+                        "crimsonrevelations:entropyrose",
+                        "crimsonrevelations:entropypeony",
+                        "crimsonrevelations:entropysugar"
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "ORDERED_DECONSTRUCTION",
+            "name": "crimsonrevelations.research.ORDERED_DECONSTRUCTION.title",
+            "icons": ["crimsonrevelations:textures/research/ordo.png"],
+            "category": "CR",
+            "parents": ["ERYTHURGY"],
+            "siblings": [],
+            "meta": [],
+            "location": [2, 4],
+            "reward_item": [],
+            "reward_knowledge": [],
+            "stages": [
+                {
+                    "text": "crimsonrevelations.research.ORDERED_DECONSTRUCTION.text.stage.1",
+                    "recipes": [
+                        "crimsonrevelations:orderwool",
+                        "crimsonrevelations:orderbrick",
+                        "crimsonrevelations:ordernetherbrick",
+                        "crimsonrevelations:orderquartz",
+                        "crimsonrevelations:orderprismarine",
+                        "crimsonrevelations:orderchorus"
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "QUARTZ_PURIFICATION",
+            "name": "crimsonrevelations.research.QUARTZ_PURIFICATION.title",
+            "icons": ["thaumcraft:textures/items/cluster_quartz.png"],
+            "category": "CR",
+            "parents": ["ORDERED_DECONSTRUCTION", "~METALPURIFICATION", "~INFERNALFURNACE"],
+            "siblings": [],
+            "meta": [],
+            "location": [3, 2],
+            "reward_item": [],
+            "reward_knowledge": [],
+            "stages": [
+                {
+                    "text": "crimsonrevelations.research.QUARTZ_PURIFICATION.text.stage.1",
+                    "required_knowledge": ["OBSERVATION;ALCHEMY;1","OBSERVATION;BASICS;1"],
+                    "required_item": [
+                        "thaumcraft:cluster;1;0",
+                        "thaumcraft:cluster;1;1",
+                        "thaumcraft:cluster;1;6"
+                    ]
+                },
+                {
+                    "text": "crimsonrevelations.research.QUARTZ_PURIFICATION.text.stage.2",
+                    "recipes": [
+                        "crimsonrevelations:quartzcluster"
+                    ]
+                }
+            ]
         }
 	]
 }
