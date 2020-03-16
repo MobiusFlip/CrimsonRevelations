@@ -33,21 +33,21 @@ public class CrimsonRecipes {
 			));
 		ThaumcraftApi.addInfusionCraftingRecipe(new ResourceLocation("crimsonrevelations", "praetor_helm"),
 			new InfusionRecipe("PRAETOR_ARMOR", new ItemStack(ItemsTC.crimsonPraetorHelm), 2,
-					new AspectList().add(Aspect.METAL, 25).add(Aspect.ELDRITCH, 10).add(Aspect.PROTECT, 20),
+					new AspectList().add(Aspect.METAL, 50).add(Aspect.ELDRITCH, 25).add(Aspect.PROTECT, 20),
 					new ItemStack(ItemsTC.crimsonPlateHelm), new Object[] {
 							new ItemStack(ItemsTC.plate, 1, 1), new ItemStack(ItemsTC.plate, 1, 1), new ItemStack(ItemsTC.plate, 1, 0), new ItemStack(ItemsTC.plate, 1, 0), BlocksTC.bannerCrimsonCult
 					}
 			));
 		ThaumcraftApi.addInfusionCraftingRecipe(new ResourceLocation("crimsonrevelations", "praetor_chestplate"),
 				new InfusionRecipe("PRAETOR_ARMOR", new ItemStack(ItemsTC.crimsonPraetorChest), 2,
-						new AspectList().add(Aspect.METAL, 25).add(Aspect.ELDRITCH, 10).add(Aspect.PROTECT, 30),
+						new AspectList().add(Aspect.METAL, 50).add(Aspect.ELDRITCH, 25).add(Aspect.PROTECT, 30),
 						new ItemStack(ItemsTC.crimsonPlateChest), new Object[] {
 								new ItemStack(ItemsTC.plate, 1, 1), new ItemStack(ItemsTC.plate, 1, 1), new ItemStack(ItemsTC.plate, 1, 1), new ItemStack(ItemsTC.plate, 1, 1), new ItemStack(ItemsTC.plate, 1, 0), BlocksTC.bannerCrimsonCult
 						}
 				));
 		ThaumcraftApi.addInfusionCraftingRecipe(new ResourceLocation("crimsonrevelations", "praetor_greaves"),
 				new InfusionRecipe("PRAETOR_ARMOR", new ItemStack(ItemsTC.crimsonPraetorLegs), 2,
-						new AspectList().add(Aspect.METAL, 25).add(Aspect.ELDRITCH, 10).add(Aspect.PROTECT, 25),
+						new AspectList().add(Aspect.METAL, 50).add(Aspect.ELDRITCH, 25).add(Aspect.PROTECT, 25),
 						new ItemStack(ItemsTC.crimsonPlateLegs), new Object[] {
 								new ItemStack(ItemsTC.plate, 1, 1), new ItemStack(ItemsTC.plate, 1, 1), new ItemStack(ItemsTC.plate, 1, 1), new ItemStack(ItemsTC.plate, 1, 0), BlocksTC.bannerCrimsonCult
 						}
@@ -67,6 +67,47 @@ public class CrimsonRecipes {
 		ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("crimsonrevelations", "ancientstone"),
                 new CrucibleRecipe("ANCIENT_STONE", new ItemStack(BlocksTC.stoneAncient), new ItemStack(BlocksTC.stoneArcane), new AspectList().add(Aspect.ELDRITCH, 5).add(Aspect.EARTH, 5)));
 		
+		ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("crimsonrevelations", "entropyblazepowder"),
+                new CrucibleRecipe("ENTROPIC_PROCESSING", new ItemStack(Items.BLAZE_POWDER, 4, 0), new ItemStack(Items.BLAZE_ROD), new AspectList().add(Aspect.ENTROPY, 25)));
+		
+		ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("crimsonrevelations", "entropybonemeal"),
+                new CrucibleRecipe("ENTROPIC_PROCESSING", new ItemStack(Items.DYE, 6, 15), new ItemStack(Items.BONE), new AspectList().add(Aspect.ENTROPY, 25)));
+		
+		ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("crimsonrevelations", "entropysunflower"),
+                new CrucibleRecipe("ENTROPIC_PROCESSING", new ItemStack(Items.DYE, 4, 11), new ItemStack(Blocks.DOUBLE_PLANT, 1, 0), new AspectList().add(Aspect.ENTROPY, 25)));
+		
+		ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("crimsonrevelations", "entropylilac"),
+                new CrucibleRecipe("ENTROPIC_PROCESSING", new ItemStack(Items.DYE, 4, 13), new ItemStack(Blocks.DOUBLE_PLANT, 1, 1), new AspectList().add(Aspect.ENTROPY, 25)));
+		
+		ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("crimsonrevelations", "entropyrose"),
+                new CrucibleRecipe("ENTROPIC_PROCESSING", new ItemStack(Items.DYE, 4, 1), new ItemStack(Blocks.DOUBLE_PLANT, 1, 4), new AspectList().add(Aspect.ENTROPY, 25)));
+		
+		ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("crimsonrevelations", "entropypeony"),
+                new CrucibleRecipe("ENTROPIC_PROCESSING", new ItemStack(Items.DYE, 4, 9), new ItemStack(Blocks.DOUBLE_PLANT, 1, 5), new AspectList().add(Aspect.ENTROPY, 25)));
+		
+		ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("crimsonrevelations", "entropysugar"),
+                new CrucibleRecipe("ENTROPIC_PROCESSING", new ItemStack(Items.SUGAR, 2, 0), new ItemStack(Items.REEDS, 1, 0), new AspectList().add(Aspect.ENTROPY, 25)));
+		
+		ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("crimsonrevelations", "orderwool"),
+                new CrucibleRecipe("ORDERED_DECONSTRUCTION", new ItemStack(Items.STRING, 4, 0), new ItemStack(Blocks.WOOL, 1, 0), new AspectList().add(Aspect.ORDER, 25)));
+		
+		ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("crimsonrevelations", "orderbrick"),
+                new CrucibleRecipe("ORDERED_DECONSTRUCTION", new ItemStack(Items.BRICK, 4, 0), new ItemStack(Blocks.BRICK_BLOCK), new AspectList().add(Aspect.ORDER, 25)));
+		
+		ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("crimsonrevelations", "ordernetherbrick"),
+                new CrucibleRecipe("ORDERED_DECONSTRUCTION", new ItemStack(Items.NETHERBRICK, 4, 0), new ItemStack(Blocks.NETHER_BRICK), new AspectList().add(Aspect.ORDER, 25)));
+		
+		ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("crimsonrevelations", "orderquartz"),
+                new CrucibleRecipe("ORDERED_DECONSTRUCTION", new ItemStack(Items.QUARTZ, 4, 0), new ItemStack(Blocks.QUARTZ_BLOCK), new AspectList().add(Aspect.ORDER, 25)));
+		
+		ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("crimsonrevelations", "orderprismarine"),
+                new CrucibleRecipe("ORDERED_DECONSTRUCTION", new ItemStack(Items.PRISMARINE_SHARD, 9, 0), new ItemStack(Blocks.PRISMARINE, 1, 1), new AspectList().add(Aspect.ORDER, 25)));
+		
+		ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("crimsonrevelations", "orderchorus"),
+                new CrucibleRecipe("ORDERED_DECONSTRUCTION", new ItemStack(Items.CHORUS_FRUIT_POPPED, 4, 0), new ItemStack(Blocks.PURPUR_BLOCK), new AspectList().add(Aspect.ORDER, 25)));
+
+		ThaumcraftApi.addCrucibleRecipe(new ResourceLocation("crimsonrevelations", "quartzcluster"),
+                new CrucibleRecipe("QUARTZ_PURIFICATION", new ItemStack(ItemsTC.clusters, 1, 7), "oreQuartz", new AspectList().add(Aspect.ORDER, 5).add(Aspect.CRYSTAL, 5)));
 	}
 
 	private static void initArcaneCrafting() {
@@ -76,9 +117,9 @@ public class CrimsonRecipes {
                 defaultGroup, "CRIMSON_REVELATIONS", 10, 
                 new AspectList(), 
                 new ItemStack(BlocksTC.bannerCrimsonCult), new Object[] {
-                        "WS ",
-                        "IS ",
-                        "WD ",
+                        "WS",
+                        "IS",
+                        "WD",
                         'S', Items.STICK, 'D', new ItemStack(Blocks.WOODEN_SLAB), 'W', new ItemStack(Blocks.WOOL, 1, 14), 'I', new ItemStack(BlocksTC.inlay)
                 }
         ));
@@ -86,9 +127,8 @@ public class CrimsonRecipes {
                 defaultGroup, "ANCIENT_STONE", 5, 
                 new AspectList(), 
                 new ItemStack(BlocksTC.stoneAncientTile), new Object[] {
-                        "SS ",
-                        "SS ",
-                        "   ",
+                        "SS",
+                        "SS",
                         'S', BlocksTC.stoneAncient
                 }
         ));
@@ -108,7 +148,6 @@ public class CrimsonRecipes {
                 new ItemStack(ItemsTC.crimsonPlateHelm), new Object[] {
                         "IBI",
                         "I I",
-                        "   ",
                         'I', new ItemStack(ItemsTC.plate, 1, 1), 'B', new ItemStack(ItemsTC.plate, 1, 0)
                 }
         ));
@@ -138,7 +177,6 @@ public class CrimsonRecipes {
                 new ItemStack(ItemsTC.crimsonRobeHelm), new Object[] {
                         "FBF",
                         "F F",
-                        "   ",
                         'F', ItemsTC.fabric, 'B', new ItemStack(BlocksTC.bannerCrimsonCult)
                 }
         ));
@@ -166,7 +204,6 @@ public class CrimsonRecipes {
                 defaultGroup, "CRIMSON_ARMOR", 50, 
                 new AspectList().add(Aspect.FIRE, 1).add(Aspect.AIR, 1).add(Aspect.ENTROPY, 1), 
                 new ItemStack(ItemsTC.crimsonBoots), new Object[] {
-                        "   ",
                         "I I",
                         "W W",
                         'I', new ItemStack(ItemsTC.plate, 1, 1), 'W', new ItemStack(Blocks.WOOL, 1, 14)
