@@ -18,7 +18,7 @@ public class CrimsonRevelations
 {
     public static final String MODID = "crimsonrevelations";
     public static final String NAME = "Crimson Revelations";
-    public static final String VERSION = "0.1";
+    public static final String VERSION = "0.8";
     public static final String DEPENDENCIES = "required-after:thaumcraft";
 
     private static Logger logger;
